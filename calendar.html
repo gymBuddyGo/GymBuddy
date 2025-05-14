@@ -170,7 +170,7 @@
 
             // Save to backend
             try {
-              const res = await fetch("http://localhost:5000/api/calendar/events", {
+              const res = await fetch("https://gymbuddy-su2f.onrender.com/api/calendar/events", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
@@ -202,7 +202,7 @@
 
         events: async function (fetchInfo, successCallback, failureCallback) {
           try {
-            const res = await fetch(`http://localhost:5000/api/calendar/events/${user._id}`, {
+            const res = await fetch(`https://gymbuddy-su2f.onrender.com/api/calendar/events/${user._id}`, {
               headers: {
                 "Authorization": `Bearer ${token}`
               }
@@ -235,7 +235,7 @@
         const token = localStorage.getItem("token");
 
         try {
-          const res = await fetch(`http://localhost:5000/api/calendar/events/${event.id}`, {
+          const res = await fetch(`https://gymbuddy-su2f.onrender.com/api/calendar/events/${event.id}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -267,7 +267,7 @@
         const token = localStorage.getItem("token");
 
         try {
-          const res = await fetch(`http://localhost:5000/api/calendar/events/${event.id}`, {
+          const res = await fetch(`https://gymbuddy-su2f.onrender.com/api/calendar/events/${event.id}`, {
             method: "DELETE",
             headers: {
               "Authorization": `Bearer ${token}`

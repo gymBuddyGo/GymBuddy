@@ -109,7 +109,7 @@
       if (!token) return;
       
       // Connect to Socket.IO server
-      socket = io('http://localhost:5000', {
+      socket = io('https://gymbuddy-su2f.onrender.com', {
         auth: {
           token: token
         }
@@ -173,7 +173,7 @@
       }
 
       try {
-        const response = await fetch("http://localhost:5000/api/protected", {
+        const response = await fetch("https://gymbuddy-su2f.onrender.com/api/protected", {
           method: "GET",
           headers: {
             "Authorization": `Bearer ${token}`
@@ -232,7 +232,7 @@
       if (!token) return;
       
       try {
-        const response = await fetch("http://localhost:5000/api/messages/unread/count", {
+        const response = await fetch("https://gymbuddy-su2f.onrender.com/api/messages/unread/count", {
           method: "GET",
           headers: {
             "Authorization": `Bearer ${token}`
@@ -261,7 +261,7 @@
       if (!token) return;
       
       try {
-        const response = await fetch("http://localhost:5000/api/friends/requests/received", {
+        const response = await fetch("https://gymbuddy-su2f.onrender.com/api/friends/requests/received", {
           method: "GET",
           headers: {
             "Authorization": `Bearer ${token}`

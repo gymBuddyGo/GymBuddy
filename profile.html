@@ -316,7 +316,7 @@
         };
 
         try {
-          const res = await fetch(`http://localhost:5000/api/auth/users/${user._id}`, {
+          const res = await fetch(`https://gymbuddy-su2f.onrender.com/api/auth/users/${user._id}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json"
@@ -405,7 +405,7 @@
         }
 
         try {
-          const res = await fetch(`http://localhost:5000/api/auth/change-password/${user._id}`, {
+          const res = await fetch(`https://gymbuddy-su2f.onrender.com/api/auth/change-password/${user._id}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json"
@@ -462,7 +462,7 @@
         }
 
         try {
-          const res = await fetch(`http://localhost:5000/api/auth/preferences/${user._id}`, {
+          const res = await fetch(`https://gymbuddy-su2f.onrender.com/api/auth/preferences/${user._id}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",

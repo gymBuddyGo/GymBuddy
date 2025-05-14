@@ -197,7 +197,7 @@
         addLogEntry('Connecting to server...', `Token: ${token.substring(0, 10)}...`);
         
         // Connect to Socket.IO server
-        socket = io('http://localhost:5000', {
+        socket = io('https://gymbuddy-su2f.onrender.com', {
           auth: {
             token: token
           }
